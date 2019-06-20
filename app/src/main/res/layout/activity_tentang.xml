@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tentang">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tentangpengembang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TENTANG PENGEMBANG"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                />
+            <ImageView
+                android:id="@+id/pengembang"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/user"
+                />
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aldian Wahyu Septiadi"
+                android:layout_toRightOf="@id/pengembang"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_marginTop="50dp"
+                />
+
+            <TextView
+                android:id="@+id/nim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F1D015005"
+                android:layout_toRightOf="@id/pengembang"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_marginTop="70dp"
+                />
+
+            <TextView
+                android:id="@+id/prodi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Program Studi Teknik Informatika"
+                android:layout_toRightOf="@id/pengembang"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_marginTop="90dp"
+                />
+
+            <TextView
+                android:id="@+id/fakultas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fakultas Teknik"
+                android:layout_toRightOf="@id/pengembang"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_marginTop="110dp"
+                />
+
+            <TextView
+                android:id="@+id/universitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Universitas Mataram"
+                android:layout_toRightOf="@id/pengembang"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_marginTop="130dp"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tentangaplikasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TENTANG APLIKASI"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tentang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#000"
+                android:text="Sistem klasifikasi ini merupakan sistem cerdas berbasi pengolahan citra yang digunakan untuk membantu asesor dalam menganalisa level keretakan pada bangunan akibat getaran. Sistem ini merupakan hasil dari pengembangan riset Program Studi Teknik Informatika Universitas Mataram. Diharapkan dengan adanya sistem ini dapat membantu masyarakat dalam menganalisa kondisi bangunan/rumah pasca gempa bumi."
+                android:textAlignment="center"
+                />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="130dp"
+                android:src="@drawable/unram"
+                android:layout_below="@id/tentang"
+                />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

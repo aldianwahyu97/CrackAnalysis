@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        >
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/utama"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/tentang"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Tentang"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/tomboltentang"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/analisa"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Mulai Analisa Retakan"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/tombolanalisa"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>
