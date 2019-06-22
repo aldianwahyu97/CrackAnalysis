@@ -8,20 +8,27 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 public class analisacita extends AppCompatActivity {
 
     Button ambilgambar;
+    Button analisagambar;
     ImageView poto;
+    TextView hasilanalisa;
+    TextView aksianalisa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +38,22 @@ public class analisacita extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         poto = findViewById(R.id.poto);
         ambilgambar=findViewById(R.id.ambilgambar);
+        analisagambar = findViewById(R.id.analisagambar);
+        hasilanalisa = findViewById(R.id.tekshasilanalisa);
+        aksianalisa = findViewById(R.id.teksaksianalisa);
+
         ambilgambar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 SelectImage();
+            }
+        });
+        analisagambar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //getSize();
+                hasilanalisa.setText("LEVEL RETAKAN: RUSAK BERAT");
+                aksianalisa.setText("Aksi: Lakukan perbaikan pada tiang dan dasar bangunan");
             }
         });
     }
@@ -91,6 +110,7 @@ public class analisacita extends AppCompatActivity {
                 }
                 //poto.setImageURI(selectedImageUri);
                 poto.setImageBitmap(mBitmap);
+
             }
 
         }
@@ -103,5 +123,17 @@ public class analisacita extends AppCompatActivity {
             return true;
         }
         return false;
+    }
+
+    public void getSize(){
+//        Bitmap bitmapOrg = BitmapFactory.decodeResource(getResources(),
+//                R.drawable.takepicture);
+//
+//
+//        Bitmap bitmap = bitmapOrg;
+//        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+//        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+//        byte[] imageInByte = stream.toByteArray();
+//        long lengthbmp = imageInByte.length;
     }
 }
